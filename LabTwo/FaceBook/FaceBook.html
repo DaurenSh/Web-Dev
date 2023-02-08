@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Facebook - login</title>
+    <style>
+        :root{
+            --facebook-color: #0165E1;
+        }
+
+        html{
+            padding: 0px;
+        }
+        body{
+            background-color: #f0f2f5;
+            padding: 0px;
+        }
+
+        #content{
+            padding: 0%;
+            margin: 0px;
+            min-height:100%;
+        }
+
+        .rightside{
+            display: flex;
+            align-items:baseline;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .logo8slogan{
+            margin-top: 11%;
+            margin-left: 17.5%;
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo{
+            position:absolute;
+            transform: translateX(-28px);
+            height: 105px;
+        }
+
+        p{
+            margin: 0;
+        }
+        .rightside p{
+            margin-left: 57%;
+        }
+
+        .slogan{
+            position: absolute;
+            width:500px;
+            margin-top:100px;
+        }
+
+        .auth{
+            display: flex;
+            height: 350px;
+            width:380px;
+            background-color: white;
+            box-shadow: 0px 5px 10px 1px rgb(200,200,200);
+            margin-left: 55%;
+            transform:translateY(-30px);
+            border-radius: 10px;
+            align-items:center;
+            flex-direction: column;
+        }
+
+        .auth form{
+            width: inherit;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+
+        .login, .password{
+            width: 330px;
+            height: 22px;
+            padding: 16px 14px;
+            font-size: large;
+            border-radius: 5px;
+            color: rgb(188, 188, 188);
+            border-width: 0.5px;
+        }
+        .submit{
+            background-color: var(--facebook-color);
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+            width: 360px;
+            height: 52px;
+            font-size: large;
+        }
+
+
+        hr{
+            width: 90%;
+            margin-top: 1.5em;
+            border-color: rgb(210,210,210);
+            filter: opacity(20.5%);
+        }
+
+        .createAcc{
+            background-color: rgb(74, 162, 39);
+            color: white;
+            height: 50px;
+            width: 180px;
+            margin-top: 10px;
+            font-size: large;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+
+        a:visited, a:link{
+            color: #0165E1;
+            text-decoration: none;
+        }
+
+        p a:link, p a:visited{
+            color: black;
+            font-weight: bold;
+        }
+
+        .submit:hover, .createAcc:hover{
+            cursor: pointer;
+            filter: brightness(99%);
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+
+
+        .login:focus, .password:focus{
+            color: black;
+            
+        }
+
+        footer{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-flow:column;
+            margin-top: 13%;
+            width: auto;
+            height: 190px;
+            background-color: white;
+            color:rgb(200,200,200)
+        }
+
+        .footer-info{
+            width: 80%;
+            height: auto;
+            display: flex;
+            align-items:flex-start;
+            justify-items: center;
+            flex-flow: column;
+            overflow: hidden;
+        }
+
+        .footer-info a, .footer-info p a{
+            color: inherit;
+            font-size: 14px;
+            font-weight: 100;
+        }
+        
+        .footer-info p{
+            word-spacing: 5px;
+        }
+
+        li{
+            display: inline-block;
+            list-style: none;
+            margin: auto 5px;
+        }
+
+        ul, hr{
+            padding-left: 0px;
+        }
+
+        hr{
+            margin:0px;
+        }
+
+        .langs{
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="content">
+        <div class="logo8slogan">
+            <img class='logo' src="Logo.svg">
+            <p class='slogan'>Connect with friends and the world<br> around you on Facebook.</p>
+        </div>
+        <div class="rightside">
+            <div class="auth">
+                <form action="">
+
+                    <input class="login" placeholder="Email or phone number">
+                    <input class="password" type="password" placeholder="Password">
+                    <input class="submit" type="submit" value="Log In">
+                </form>
+
+                <a href="">Forgot pasword?</a>
+
+                <hr>
+
+                <button class="createAcc">Create new account</button>
+            </div>
+            <p>
+                <a href="">Create a Page</a> for a
+                celebrity,
+                brand or business
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <div class="langs">
+                <p>
+                    <a href="">English(US)</a>
+                    <a href="">Русский</a>
+                    <a href="">Türkçe</a>
+                    <a href="">Bahasa Indonesia</a>
+                    <a href="">中文(简体)</a>
+                    <a href="">Қазақша</a>
+                    <a href="">Deutsch</a>
+                    <a href="">한국어</a>
+                    <a href="">Shqip</a>
+                    <a href="">Español</a>
+                    <a href="">Português (Brasil)</a>
+                </p>
+            </div>
+            <hr>
+            <div>
+                <ul>
+                    <li><a href="">Sign Up</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="">Messenger</a></li>
+                    <li><a href="">Facebook Lite</a></li>
+                    <li><a href="">Watch</a></li>
+                    <li><a href="">Places</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Marketplace</a></li>
+                    <li><a href="">Meta Pay</a></li>
+                    <li><a href="">Oculus</a></li>
+                    <li><a href="">Portal</a></li>
+                    <li><a href="">Intagram</a></li>
+                    <li><a href="">Bulletin</a></li>
+                    <li><a href="">Fundraisers</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Voting Information Center</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Privacy Center</a></li>
+                    <li><a href="">Groups</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Create Ad</a></li>
+                    <li><a href="">Create Page</a></li>
+                    <li><a href="">Developers</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">Ad choices</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact Uploading & Non-Users</a></li>
+                </ul>
+            </div>
+            <p>Meta © 2023</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
