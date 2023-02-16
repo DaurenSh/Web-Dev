@@ -1,0 +1,86 @@
+.header {
+    background-color: black;
+    height: 50px;
+
+}
+
+.InHeader {
+    color: rgb(174, 169, 169);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 10;
+    font-size: 20px;
+    position: relative;
+    left: 80px;
+    top: 13px;
+}
+
+.ToDo {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 230px;
+    top: 100px;
+    font-size: 30px;
+}
+
+#Input {
+    position: relative;
+    left: 200px;
+    top: 150px;
+    width: 600px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(159, 159, 159);
+    border-radius: 4px;
+    border-width: 0.1px;
+    border: 0.4 px solid;
+}
+
+.button {
+    position: relative;
+    top: 150px;
+    width: 60px;
+    border-color: rgb(0, 98, 255);
+    border-radius: 4px;
+    border-width: 0.1px;
+    border: 0.4 px solid;
+    height: 43px;
+    background-color: blue;
+    left: 230px;
+}
+
+.button:hover {
+    background-color: rgb(0, 0, 170);
+}
+
+::placeholder {
+    position: relative;
+    left: 10px;
+    font-size: 17px;
+    top: 2px;
+}
+
+#add {
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one{
+    height: auto;
+    width: auto;
+}
+
+.check{
+    position: relative;
+    right: 40px;
+    top: 4px;
+    text-decoration: none;
+}
+
+
+#hr{
+    position: relative;
+    width: 823px;
+    right: 73px;
+    top: auto;
+}
