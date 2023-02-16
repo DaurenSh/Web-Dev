@@ -4,6 +4,23 @@
 
 }
 
+.image {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 7.5px;
+}
+
+.trash {
+    background: transparent;
+    position: relative;
+    width: 30px;
+    height: 35px;
+    left: 700px;
+    bottom: 75px;
+    border-width: 0px;
+}
+
 .InHeader {
     color: rgb(174, 169, 169);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -70,6 +87,27 @@
     width: auto;
 }
 
+.box{
+    position: relative;
+    top: 190px;
+    width: 800px;
+    left: 220px;
+    border-radius: 4px;
+    height: auto;
+}
+
+#lis1{
+    max-width: 700px;
+    word-wrap: break-word;
+}
+
+.list{
+    position: relative;
+    width: 720px;
+    left: 20px;
+    text-decoration: none;
+    list-style: none;
+}
 .check{
     position: relative;
     right: 40px;
@@ -77,6 +115,20 @@
     text-decoration: none;
 }
 
+.line{
+    position: relative;
+    width: 650px;
+    bottom: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-decoration: line-through;
+}
+
+.tasks{
+    position: relative;
+    width: 650px;
+    bottom: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
 
 #hr{
     position: relative;
