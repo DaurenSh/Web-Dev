@@ -8,10 +8,18 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = products;
+  products = [...products];
 
-  share() {
-    window.alert('The product has been shared!');
+  share(link: string) {
+    document.location.href = link;
+  }
+
+  onNotify() {
+    alert("notify");
+  }
+
+  formatedPrice(price: number): string {
+    return price.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
   }
 }
 
