@@ -1,0 +1,23 @@
+.container .container-items {
+  padding: 10px;
+}
+
+.container {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid darkgray;
+}
+
+.container .container-items button {
+  height: 30px;
+  width: 100px;
+  border: 1px solid cornflowerblue;
+  border-radius: 4px;
+  background-color: #3070cf;
+  color: white;
+  cursor: pointer;
+}

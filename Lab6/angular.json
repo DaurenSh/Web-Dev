@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "lab6"
+  "defaultProject": "lab6",
+  "cli": {
+    "analytics": false
+  }
 }

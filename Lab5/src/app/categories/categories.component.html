@@ -1,0 +1,5 @@
+<div class="container">
+  <div class="container-items" *ngFor="let category of categories">
+    <button (click)="handleCategory(category.name)" >{{ category.name }}</button>
+  </div>
+</div>

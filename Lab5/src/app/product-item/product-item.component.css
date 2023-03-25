@@ -1,0 +1,21 @@
+.contain-item {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-top: 10px;
+}
+
+.container-item-right {
+  padding-left: 20px;
+}
+
+.container-item-right p {
+  padding-top: 10px;
+}
+
+img {
+  width: auto;
+  height: 150px;
+}

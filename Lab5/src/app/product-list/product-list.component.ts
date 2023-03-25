@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
-import { products } from '../products';
+import { categories, Category } from 'src/items/categories';
+import { products } from 'src/items/products';
 
 @Component({
   selector: 'app-product-list',
@@ -8,24 +8,11 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = [...products];
+  items = products;
+  categories = categories;
+  allItems = this.items;
 
-  share(link: string) {
-    document.location.href = link;
-  }
-
-  onNotify() {
-    alert("notify");
-  }
-
-  formatedPrice(price: number): string {
-    return price.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
+  handleCategory(category: string) {
+    this.allItems = this.items.filter((item: { category: Category }) => item.category.name === category);
   }
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

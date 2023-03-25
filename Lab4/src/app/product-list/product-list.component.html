@@ -18,6 +18,14 @@
       <p *ngIf="product.rating">
         <b>Цена:</b> {{ formatedPrice(product.price) }} ₸
       </p>
+      <p id="comm"><b>Комментарий:</b> {{product.comment}}</p>
+      <script type="text/javascript">
+        var regex = /"<p id="comm"><b>Комментарий:</b> {{product.comment}}</p>"/ig;
+        if(product.comment==""){
+          document.body.innerHTML = document.body.innerHTML.replace(regex,"");
+        }
+      </script>
+
 
       <div class="buttons">
         <button type="button" (click)="share(product.url)">

@@ -1,7 +1,15 @@
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3070cf;
+  border-bottom: 1px solid lightgray;
+}
 
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+header p {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
